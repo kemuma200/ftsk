@@ -61,7 +61,10 @@ export default class Person extends React.Component{
                 {this.team.map((key, index)=>{
                     return(
                         <div key = {index} className="aminiTeam">
-                            <img src={this.team[index].image} alt = {this.team[index].name}/>
+                            <div className="memberImageContainer">
+                                <img src={this.team[index].image} alt = {this.team[index].name}/>
+                            </div>
+                           
                             <p className="membername">{this.team[index].name}</p>
                             <p className="membertitle">{this.team[index].title}</p>
                         </div>

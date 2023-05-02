@@ -7,6 +7,15 @@ import Person from "./team";
 import arm from "../arm.png";
 import nvid from "../nVidia.png";
 import hyper from "../hypergiant.png";
+import news1 from "../apollo.jpg";
+import news2 from "../blackmoon3.jpg";
+import news3 from "../planets.jpeg";
+import news4 from "../moon2.webp";
+import news5 from "../us.jpg";
+import Footer from "./footer";
+import Final from "./final";
+
+
 
 
 export default class Home extends React.Component{
@@ -31,6 +40,18 @@ export default class Home extends React.Component{
                     </div>
                     
                 </div>
+                <div class="newsSection">
+                    <h2 className="Header">What's New</h2>
+                    <div class="newsSegment">
+                        <img className="newstab1" src={news1} alt="apollonews"/>    
+                        <img className="newstab2" src={news2} alt="blackmoon"/>
+                        <div className="newstab3">
+                            <img className="newstab_1" src={news3} alt="planetnews"/>
+                            <img className="newstab_1" src={news4} alt="lunar"/>
+                        </div>
+                        <img className="newstab4" src={news5} alt="paradigm_shift"/>
+                    </div>
+                </div>
                 
                 <div className="thirdSection">
                     <h2 className="Header">Meet our Team</h2>
@@ -40,23 +61,31 @@ export default class Home extends React.Component{
                     working for tech giantslike NVIDIA, Microsoft, Intel, Arm, 
                     and leading African startups.</p>
                     <Person className="homeTeam"/>
-                    <a href="#" className="moreTeamMembers">See more</a>
-                </div>
-                <div className="beforefourthsection">
-                    <h2 className="Header"> Amini Satellite Launch </h2>
+                    <a href="/" className="moreTeamMembers">See more</a>
                 </div>
                 <div className="fourthSection">
                     <h2 className="Header">Our Partners</h2>
                     <div className="partnerIcons">
+                        <div class="encloseImage">
                         <img src={arm} alt="arm"/>
-                        <img src={nvid} alt="nvidia"/>
-                        <img src={hyper} alt="hypergiant"/>
+                        </div>
+                        <div class="encloseImage">
+                        <img src={hyper} alt="arm"/>
+                        </div>
+                        <div class="encloseImage">
+                        <img src={nvid} alt="arm"/>
+                        </div>
+                       
+                        
+        
                     </div>
 
                 </div>
                 <div className="footer">
-                    
+                    <Footer/>
+                    <Final/>
                 </div>
+                
 
                 
 
