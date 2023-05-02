@@ -14,15 +14,17 @@ import news4 from "../moon2.webp";
 import news5 from "../us.jpg";
 import Footer from "./footer";
 import Final from "./final";
-
-
+import CountDownTimer from "./countTimer";
+import Timer from "./timer";
 
 
 
 export default class Home extends React.Component{
     render(){
+        
         return(
             <div className="aminiHome">
+            <Timer/>
                 <Navbar/>
                 <Example/>
                 <div className="slideshowText">
@@ -85,7 +87,11 @@ export default class Home extends React.Component{
                 
                 
 
-                
+                <div className="footer">
+                <Footer/>
+                <Final/>
+              </div>  
+      
 
             </div>
             

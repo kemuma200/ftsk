@@ -18,9 +18,10 @@ ul{
   display:flex;
   align-items: center;
 }
-ul li{
+ul .navItem{
   flex:1;
   justify-content: space-between;
+  color: white;
 }
 .aminiLogo{
   width: 60px;
@@ -114,7 +115,7 @@ ul li{
   padding: 2vh;
 }
 .memberImageContainer{
-  width: 20vw;
+  width: 10vw;
 }
 .aminiTeam img{
   width: 60%;
@@ -325,14 +326,20 @@ ul li{
 }
 .footerEnclosing ul{
   display: block;
+  text-transform: capitalize;
 }
 .footerEnclosing ul li{
   font-weight: 100;
+  display: flex;
+  justify-content: left;
 }
 .footerEnclosing ul h3{
   margin: 0;
   padding:0;
   font-size: larger;
+  display: flex;
+  justify-content: left;
+  
 }
 .finalLineFooter{
   width:98vw;

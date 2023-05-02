@@ -1,13 +1,25 @@
 import React from "react";
 import image1 from "../xoplanet.jpg";
 import "../contact.css";
+import Navbar from "./navbar";
+import Final from "./final";
+import Footer from "./footer";
+import CountDownTimer from "./countTimer";
 
 
 
 export default class Contact extends React.Component{
     render(){
+        const THREE_DAYS_IN_MS = 300 * 24 * 60 * 60 * 1000;
+  const NOW_IN_MS = new Date().getTime();
+
+  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
         return(
             <div className="contactsPage"> 
+            <div className="beforefourthsection">
+    <CountDownTimer  targetDate={dateTimeAfterThreeDays}/>
+    </div>
+    <Navbar/>
             <img className="spacebinoculars" src={image1} alt="spacebinoculars"/>
             <h1 className="contactsHeader">We would love to hear from you</h1>
             <div>
@@ -78,6 +90,11 @@ export default class Contact extends React.Component{
                  </form>
                 </div>
             </div>
+            
+      <div className="footer">
+      <Footer/>
+      <Final/>
+    </div>
             </div>
         )
     }

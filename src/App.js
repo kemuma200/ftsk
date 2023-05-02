@@ -1,34 +1,35 @@
-import './App.css';
-//import Home from './components/home';
+import Home from './components/home';
 import CountDownTimer from './components/countTimer';
 import Footer from './components/footer';
 import Final from './components/final';
-//import About from './components/about';
+import About from './components/about';
 import Navbar from './components/navbar';
-//import Solutions from './components/solutions';
+import Solutions from './components/solutions';
 import Contact from './components/contact';
-
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import './App.css';
 
 function App() {
-  const THREE_DAYS_IN_MS = 300 * 24 * 60 * 60 * 1000;
-  const NOW_IN_MS = new Date().getTime();
-
-  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
-  console.log("hey");
+  
 
   return (
     <div className="App">
-      <div className="beforefourthsection">
-      <CountDownTimer  targetDate={dateTimeAfterThreeDays}/>
-      </div>
-      <Navbar/>
       
-      <Contact/>
+    
+    <BrowserRouter>
+    <Routes>
+    <Route path="/" element={<Home />}/>
+    <Route path="/about" index element={<About />} />
+    <Route path="/contacts" index element={<Contact />} />
+    <Route path="/solutions" index element={<Solutions />} />
+    
+    </Routes>
+    </BrowserRouter>
+   
+     
+      
 
-      <div className="footer">
-        <Footer/>
-        <Final/>
-      </div>
 
     </div>
   );

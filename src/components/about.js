@@ -2,11 +2,23 @@ import React from "react";
 import Person from "./team";
 import vidz from "../soh.mp4";
 import "../about.css";
+import CountDownTimer from "./countTimer";
+import Navbar from "./navbar";
+import Footer from "./footer";
+import Final from "./final";
 
 export default class About extends React.Component{
     render(){
+        const THREE_DAYS_IN_MS = 300 * 24 * 60 * 60 * 1000;
+        const NOW_IN_MS = new Date().getTime();
+
+        const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
         return(
             <div className="aboutContainer">
+            <div className="beforefourthsection">
+            <CountDownTimer  targetDate={dateTimeAfterThreeDays}/>
+            </div>
+            <Navbar/>
             <video className="aboutVideo" src={vidz} loop autoPlay muted/>
                 
                 <div className="ch">
@@ -27,6 +39,11 @@ export default class About extends React.Component{
                  </p>
                  <Person/>
                </div>
+               
+      <div className="footer">
+      <Footer/>
+      <Final/>
+    </div>
             </div>
         )
     }
