@@ -3,9 +3,10 @@ import './App.css';
 import CountDownTimer from './components/countTimer';
 import Footer from './components/footer';
 import Final from './components/final';
-import About from './components/about';
+//import About from './components/about';
 import Navbar from './components/navbar';
-import Solutions from './components/solutions';
+//import Solutions from './components/solutions';
+import Contact from './components/contact';
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
       </div>
       <Navbar/>
       
-      <Solutions/>
+      <Contact/>
 
       <div className="footer">
         <Footer/>
