@@ -1,6 +1,10 @@
 import './App.css';
-import Home from './components/home';
+//import Home from './components/home';
 import CountDownTimer from './components/countTimer';
+import Footer from './components/footer';
+import Final from './components/final';
+import About from './components/about';
+import Navbar from './components/navbar';
 
 
 function App() {
@@ -15,7 +19,15 @@ function App() {
       <div className="beforefourthsection">
       <CountDownTimer  targetDate={dateTimeAfterThreeDays}/>
       </div>
-      <Home/>   
+      <Navbar/>
+      
+      <About/>
+
+      <div className="footer">
+        <Footer/>
+        <Final/>
+      </div>
+
     </div>
   );
 }

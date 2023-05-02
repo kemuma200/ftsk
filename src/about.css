@@ -1,0 +1,45 @@
+.aboutContainer{
+    text-align: center;
+}
+
+.aminiTeamEnclosing{
+    display: flex; 
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  .aminiTeam{
+    flex: 1;
+    margin-left :3vh;
+    margin-right :3vh;
+    padding: 2vh;
+  }
+  .memberImageContainer{
+    width: 40vw;
+  }
+  .aminiTeam img{
+    width: 60%;
+    height:auto;
+    border-radius: .5vh;
+  }
+  .aminiTeam .membername{
+   font-weight: 400;
+   font-size: 3vh;
+  }
+  .aminiTeam .membertitle{
+    text-align: center;
+    font-weight: 100;
+  }
+  .aboutVideo{
+    width: 100vw;
+    height:auto;
+  }
+  .ch{
+    position: absolute;
+    top: 90vh;
+    z-index:300; 
+  }
+  .aboutteam{
+    background-color: #0e0d0d;
+    margin-top: -3vh;
+  }
+  

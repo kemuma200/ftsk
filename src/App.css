@@ -103,8 +103,7 @@ ul li{
 /* team section */
 
 .aminiTeamEnclosing{
-  display: flex;
-  overflow: hidden; 
+  display: flex; 
   margin: auto;
 }
 
@@ -118,7 +117,7 @@ ul li{
   width: 20vw;
 }
 .aminiTeam img{
-  width: 40%;
+  width: 60%;
   height:auto;
   border-radius: .5vh;
 }
@@ -402,6 +401,18 @@ ul li{
   width:2em;
   height:2em;
 }
+
+/**about section**/
+.abouteam .aminiTeamEnclosing{
+  display:flex;
+  flex-wrap: wrap;
+
+}
+
+
+
+
+
 
 
 

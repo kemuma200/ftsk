@@ -7,7 +7,7 @@ import img5 from "../EshaniKaushal.jpeg";
 import img6 from "../ChadiAssoualma.jpg";
 import img7 from "../GeorgeGichuru.jpeg";
 import img8 from "../LinnetMaina.jpeg";
-import "../App.css";
+
 
 
 export default class Person extends React.Component{
