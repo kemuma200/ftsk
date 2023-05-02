@@ -5,6 +5,7 @@ import Footer from './components/footer';
 import Final from './components/final';
 import About from './components/about';
 import Navbar from './components/navbar';
+import Solutions from './components/solutions';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
       </div>
       <Navbar/>
       
-      <About/>
+      <Solutions/>
 
       <div className="footer">
         <Footer/>
