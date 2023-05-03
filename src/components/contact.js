@@ -85,8 +85,7 @@ export default class Contact extends React.Component{
                     <label>Level of satellite imagery</label><br/>
                     <input/><br/>
                  </div>
-                
-                    
+               
                  </form>
                 </div>
             </div>

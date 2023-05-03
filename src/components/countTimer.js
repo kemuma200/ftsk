@@ -35,7 +35,7 @@ const ExpiredNotice = () => {
           <DateTimeDisplay value={seconds} type={'Seconds'} isDanger={false} />
         </div>
         </div>
-        <button className="shareCountdown">Share on the  socials</button>
+        <button className="shareCountdown">Share with friends</button>
              
         </a>
       </div>
@@ -68,3 +68,4 @@ export default function CountDownTimer({ targetDate })
     );
   }
 };
+

@@ -64,7 +64,7 @@ export default class Home extends React.Component{
                     working for tech giantslike NVIDIA, Microsoft, Intel, Arm, 
                     and leading African startups.</p>
                     <Person className="homeTeam"/>
-                    <a href="/" className="moreTeamMembers">See more</a>
+                    <a href="/" className="moreTeamMembers">See more...</a>
                 </div>
                 <div className="fourthSection">
                     <h2 className="Header">Our Partners</h2>
