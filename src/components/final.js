@@ -13,8 +13,7 @@ export default class Final extends React.Component{
             <div className="finalLineFooter">
                 <div className="footerLeft">
                     <span className="footerInitials">
-                        <p className="cpyright">c</p>
-                        <p className="footerName">Amini Inc.</p><br/>
+                        <p className="footerName">&copy; Amini Inc.</p><br/>
                     </span>
                     <p className="cpyrightTag">All rights reserved</p>
                     
@@ -24,7 +23,7 @@ export default class Final extends React.Component{
                 </div>
                 
                 <div>
-                    <div className="socials">
+                    <div className="socials" id="socials">
                     <FaLinkedin className="social-icon"/>
                     <FaYoutube className="social-icon"/>
                     <FaTwitter className="social-icon"/>

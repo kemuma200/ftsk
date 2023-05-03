@@ -24,15 +24,15 @@ const ExpiredNotice = () => {
         >
         <img src={satellite} alt="satellite"/>
         <div classNaame="counterbox">
-        <h4>Join us on the countdown to Amini's first satellite launch</h4>
+        <h4 className="countDownFont">Join us on the countdown to Amini's first satellite launch</h4>
         <div className ="theCounter">
           <DateTimeDisplay value={days} type={'Days'} isDanger={days <= 3} />
           :
-          <DateTimeDisplay value={hours} type={'Hours'} isDanger={false} />
+          <DateTimeDisplay value={hours} type={'Hrs'} isDanger={false} />
           :
-          <DateTimeDisplay value={minutes} type={'Mins'} isDanger={false} />
+          <DateTimeDisplay value={minutes} type={'Min'} isDanger={false} />
           :
-          <DateTimeDisplay value={seconds} type={'Seconds'} isDanger={false} />
+          <DateTimeDisplay value={seconds} type={'Sec'} isDanger={false} />
         </div>
         </div>
         <button className="shareCountdown">Share with friends</button>

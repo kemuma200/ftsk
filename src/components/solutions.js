@@ -33,7 +33,7 @@ export default class Solutions extends React.Component{
             
             </div>
             <div className="solutionSection">
-            <h1>Our data is</h1>
+            <h2>Our data is</h2>
                 <div className="solutionOne">
                     <div className="solutionImage">
                     <img src={c} alt="solution1"/>
@@ -67,13 +67,13 @@ export default class Solutions extends React.Component{
                 <div className="fourthSection">
                     <h2 className="Header">Our Partners</h2>
                     <div className="partnerIcons">
-                        <div class="encloseImage">
+                        <div className="encloseImage">
                         <img src={arm} alt="arm"/>
                         </div>
-                        <div class="encloseImage">
+                        <div className="encloseImage">
                         <img src={hyper} alt="arm"/>
                         </div>
-                        <div class="encloseImage">
+                        <div className="encloseImage">
                         <img src={nvid} alt="arm"/>
                         </div>
                        

@@ -26,19 +26,19 @@ export default class Contact extends React.Component{
                 <div className="contactMethods">
                     <div className="contactMeans">
                         <p>Email</p>
-                        <p>jumanjisatellites@amini.co.ke</p>
+                        <a href="mailto:jumanjisatellites@amini.co.ke">Email</a>
                     </div>
                     <div className="contactMeans">
                         <p>Phone Number</p>
                         <p>00000000000000</p>
                     </div>
                     <div className="contactMeans">
-                        <p>Via social Media</p>
+                        <p>Social Media</p>
                         
                     </div>
                 </div>
-                <div>
-                <p>To submit an inquiry, please fill out the form below.
+                <div className="userInput">
+                <p className="formInfo">To submit an inquiry, please fill out the form below.
                 Our representative will get back to you.</p>
                  <form className="inquiryForm">
                  <div className="item">

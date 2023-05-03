@@ -75,7 +75,7 @@ export default class Home extends React.Component{
                         <div class="encloseImage">
                         <img src={hyper} alt="arm"/>
                         </div>
-                        <div class="encloseImage">
+                        <div className="encloseImage">
                         <img src={nvid} alt="arm"/>
                         </div>
                        

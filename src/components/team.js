@@ -21,35 +21,35 @@ export default class Person extends React.Component{
             {
                 name: "Muthoni Karubiu",
                 image: img2,
-                title: "Founder and CEO"
+                title: "Head of operations"
             },
             {
                 name : "Mwenda Mugendi",
                 image: img3,
-                title: "Founder and CEO"
+                title: "Head of Technology"
             },
             {
                 name : "Clinton Oduor",
                 image: img4,
-                title: "Founder and CEO"
+                title: "Machine Learning Engineer"
             },
             {
                 name : "Eshani Kaushal",
                 image: img5,
-                title: "Founder and CEO"
+                title: "Head of business development and General Counsel"
             },
             {
                 name : "Chadi Assoualma",
                 image: img6,
-                title: "Founder and CEO"
+                title: "Market Research Analyst Lead"
             },{
                 name : "George Gichuru",
                 image: img7,
-                title: "Founder and CEO"
+                title: "Blockchain Engineer"
             },{
                 name : "LinnetMaina",
                 image: img8,
-                title: "Founder and CEO"
+                title: "Finance and Admin"
             }]
             
     }
