@@ -505,7 +505,7 @@ ul .navItem{
   }
   .footerEnclosing{
     display: block;
-    margin-left: 20vh;
+    
   }
   .newsletterForm{
     width: fit-content;
@@ -628,7 +628,7 @@ ul .navItem{
   }
   .footerEnclosing ul{
     display: flex;
-    margin-left: 20vw;
+    
   }
   .newsletterForm{
     width: fit-content;
@@ -965,9 +965,7 @@ ul .navItem{
   .solutionSection{
     display:block;
   }
-  .solutionSection h2{
-    
-  }
+ 
   .solutionSection .solutionImage{
     display:none;
   }
