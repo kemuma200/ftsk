@@ -2,7 +2,7 @@ import React from 'react';
 import { useCountdown } from './countdown';
 import "../App.css";
 import DateTimeDisplay from './DateTimeDisplay';
-import satellite from "../satellite.png"
+
 
 const ExpiredNotice = () => {
     return (
@@ -16,15 +16,14 @@ const ExpiredNotice = () => {
   const ShowCounter = ({ days, hours, minutes, seconds }) => {
     return (
       <div className="show-counter">
+      <h2 className="countDownFont">Amini DIJKSTRA-1 launch</h2>
         <a
-          href="https://tapasadhikary.com"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#"
           className="countdown-link"
         >
-        <img src={satellite} alt="satellite"/>
+        
         <div classNaame="counterbox">
-        <h4 className="countDownFont">Join us on the countdown to Amini's first satellite launch</h4>
+       
         <div className ="theCounter">
           <DateTimeDisplay value={days} type={'Days'} isDanger={days <= 3} />
           :
@@ -35,8 +34,7 @@ const ExpiredNotice = () => {
           <DateTimeDisplay value={seconds} type={'Sec'} isDanger={false} />
         </div>
         </div>
-        <button className="shareCountdown">Share with friends</button>
-             
+            
         </a>
       </div>
     );

@@ -16,24 +16,21 @@ import CountDownTimer from "./countTimer";
 
 export default class Solutions extends React.Component{
     render(){
-        const THREE_DAYS_IN_MS = 300 * 24 * 60 * 60 * 1000;
-  const NOW_IN_MS = new Date().getTime();
-
-  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
         return(
             <div className="solutions">
-            <div className="beforefourthsection">
-    <CountDownTimer  targetDate={dateTimeAfterThreeDays}/>
-    </div>
+           
     <Navbar/>
-            <video className="solutionVideo" src={video1} loop autoPlay muted/>
+    <div className="videoSection">
+        <video className="asolutionVideo" src={video1} loop autoPlay muted/>
+    </div>
+          
             <div className="headerText">
             <h1>Amini Solutions</h1>
-            <p>Unlock a sustainable future with Amini! We're dedicated to providing reliable climate data for impactful collaborations with businesses, governments, and global organizations.</p>
+            <p>Unlock a sustainable future with Amini! We are dedicated to providing reliable climate data for impactful collaborations with businesses, governments, and global organizations.</p>
             
             </div>
             <div className="solutionSection">
-            <h2>Our data is</h2>
+            <h2 className="subheader">Our data is</h2>
                 <div className="solutionOne">
                     <div className="solutionImage">
                     <img src={c} alt="solution1"/>
@@ -65,23 +62,22 @@ export default class Solutions extends React.Component{
                 Our groundbreaking solution involves launching a constellation of IOT-integrated nanosatellites, providing real-time and low-cost actionable data, and building the environmental data infrastructure for Africa.
                 </p>
                 <div className="fourthSection">
-                    <h2 className="Header">Our Partners</h2>
+                <h2 className="Header">Our Partners</h2>
+                <div className="enclosePartnerIcons">
                     <div className="partnerIcons">
-                        <div className="encloseImage">
-                        <img src={arm} alt="arm"/>
+                        <div class="encloseImage">
+                            <img src={arm} alt="arm"/>
+                        </div>
+                        <div class="encloseImage">
+                            <img src={hyper} alt="arm"/>
                         </div>
                         <div className="encloseImage">
-                        <img src={hyper} alt="arm"/>
+                            <img src={nvid} alt="arm"/>
                         </div>
-                        <div className="encloseImage">
-                        <img src={nvid} alt="arm"/>
-                        </div>
-                       
-                        
-        
                     </div>
 
                 </div>
+            </div>
             </div>
 
            

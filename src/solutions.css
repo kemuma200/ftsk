@@ -8,8 +8,15 @@
 }
 .headerText{
     position: absolute;
-    margin-top: -30vh;
+    margin-top: -40vh;
     margin-left: 3vh;
+}
+.solutions .headerText{
+    font-size: x-large;
+}
+.solutionSection .subheader{
+    font-size: xx-large;
+    font-weight: 400;
 }
 .solutionSection .solutionImage{
     width: 50vw;
@@ -31,6 +38,9 @@
     margin-top: auto;
     margin-bottom: auto;
     padding:2vh;
+}
+.solutionData h2{
+    font-weight: 400;
 }
 .solutionStatement{
    font-size: 3vh;

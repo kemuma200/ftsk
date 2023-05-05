@@ -9,19 +9,34 @@ img{
 }
 .contactsHeader{
     position: absolute;
-    margin-top: -50vh;
-    margin-left: 30vw;
+    margin-top: -80vh;
+    width: 100vw;
+    font-size: 10vh;
+    
 }
 
 .contactMethods{
+    position: absolute;
     display:flex;
+    margin-top: -50vh;
+    width: 100vw;
+      
+}
+.contactMeansTitle{
+    font-size: xx-large;
+}
+.contactSocials{
     margin: 2vh;
+}
+.contactMeans .social-icon{
+    color: #fff;
 }
 .contactMeans{
     flex:1;
-    border-radius: .5vh;
-    background-color: #0e0d0d;
-    margin: 2vh;
+}
+.deservesborder{
+    margin-right: 2vh;
+    border-right: 1px solid #fff;
 }
 .inquiryForm{
     width:90vw;
@@ -45,3 +60,22 @@ img{
     justify-self: left;
    
 }
+
+.inquiryForm .itemButton{
+    height: 8vh;
+    width: 20vw;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inquiryForm button{
+    width: 10vw; 
+    height: 7vh;
+    border: 1px solid rgb(137,50,66);
+    background-color: #000;
+    color: white;
+    border-radius: 3vh;
+    
+}
+

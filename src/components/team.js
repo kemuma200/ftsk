@@ -47,7 +47,7 @@ export default class Person extends React.Component{
                 image: img7,
                 title: "Blockchain Engineer"
             },{
-                name : "LinnetMaina",
+                name : "Linnet Maina",
                 image: img8,
                 title: "Finance and Admin"
             }]

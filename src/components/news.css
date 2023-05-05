@@ -1,0 +1,21 @@
+.newsSegment{
+    display:flex;
+    
+}
+.newsIndividualSegment{
+    width: 30vw;
+    height: 30vh;
+    margin: 2vh;
+    border-radius: 8vh;
+    background-color: black;
+}
+
+.newsIndividualSegment img{
+    width: 40vh;
+    height: 30vh;
+}
+.newsIndividualSegment p{
+    margin-top: -10vh;
+    text-transform: lowercase;
+    font-size: 2.5vh;  
+}

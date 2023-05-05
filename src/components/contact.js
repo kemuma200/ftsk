@@ -5,36 +5,45 @@ import Navbar from "./navbar";
 import Final from "./final";
 import Footer from "./footer";
 import CountDownTimer from "./countTimer";
+import { FaTwitter} from "@react-icons/all-files/fa/FaTwitter";
+import {FaInstagram} from "@react-icons/all-files/fa/FaInstagram";
+import {FaFacebook} from "@react-icons/all-files/fa/FaFacebook";
+import {FaLinkedin} from "@react-icons/all-files/fa/FaLinkedin";
+import {FaYoutube} from "@react-icons/all-files/fa/FaYoutube";
+
 
 
 
 export default class Contact extends React.Component{
     render(){
-        const THREE_DAYS_IN_MS = 300 * 24 * 60 * 60 * 1000;
-  const NOW_IN_MS = new Date().getTime();
-
-  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
         return(
             <div className="contactsPage"> 
-            <div className="beforefourthsection">
-    <CountDownTimer  targetDate={dateTimeAfterThreeDays}/>
-    </div>
+           
     <Navbar/>
             <img className="spacebinoculars" src={image1} alt="spacebinoculars"/>
-            <h1 className="contactsHeader">We would love to hear from you</h1>
-            <div>
+            <h1 className="contactsHeader"> Get in touch</h1>
+            <h1 className="smallscreenHeader">Get in touch</h1>
+            <div className>
                 <div className="contactMethods">
-                    <div className="contactMeans">
-                        <p>Email</p>
-                        <a href="mailto:jumanjisatellites@amini.co.ke">Email</a>
+                    <div className="contactMeans deservesborder summer">
+                        <p className="contactMeansTitle">Email</p>
+                        <a href="mailto:jumanjisatellites@amini.co.ke">amanisatellies@amini.co.ke</a>
                     </div>
-                    <div className="contactMeans">
-                        <p>Phone Number</p>
-                        <p>00000000000000</p>
-                    </div>
-                    <div className="contactMeans">
-                        <p>Social Media</p>
+                    
+                    <div className="contactMeans deservesborder contactSocials">
+                        <p className="contactMeansTitle">Socials</p>
+                        <div className="socials" id="socials">
+                        <FaLinkedin className="social-icon"/>
+                        <FaYoutube className="social-icon"/>
+                        <FaTwitter className="social-icon"/>
+                        <FaFacebook className="social-icon"/>
+                        <FaInstagram className="social-icon"/>
+                        </div>
                         
+                    </div>
+                    <div className="contactMeans noborder summer">
+                        <p className="contactMeansTitle">Phone Number</p>
+                        <p>+254733333333 | 020-78659876</p>
                     </div>
                 </div>
                 <div className="userInput">
@@ -85,6 +94,12 @@ export default class Contact extends React.Component{
                     <label>Level of satellite imagery</label><br/>
                     <input/><br/>
                  </div>
+                 <div className="item itemButton">
+                     <div className="itemButton">
+                        <button >Submit</button>
+                     </div>
+                 </div>
+                 
                
                  </form>
                 </div>

@@ -13,13 +13,14 @@ export default class Final extends React.Component{
             <div className="finalLineFooter">
                 <div className="footerLeft">
                     <span className="footerInitials">
-                        <p className="footerName">&copy; Amini Inc.</p><br/>
+                        <p>&copy; 2023</p>
+                        <p className="footerName"> Amini Inc.</p><br/>
                     </span>
                     <p className="cpyrightTag">All rights reserved</p>
                     
                 </div>
                 <div className="finalNewsletter">
-                    <button >Join our newsletter battalion</button>
+                    <button >Subscribe to our newsletter</button>
                 </div>
                 
                 <div>

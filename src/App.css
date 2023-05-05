@@ -1,12 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Lato:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@500;600&family=Noticia+Text:wght@700&family=Open+Sans&family=Orbitron:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Lato:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@500;600&family=Noticia+Text:wght@700&family=Open+Sans&family=Orbitron:wght@600&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Lato:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@500;600&family=Noticia+Text:wght@700&family=Open+Sans&family=Orbitron:wght@600&family=Roboto+Condensed:wght@300&family=Ropa+Sans&display=swap');
 .App {
   background: #000;
   color: white;
   max-width: 100vw;
   width:100vw;
+  overflow-x: hidden !important;
+  overflow-y: hidden;
+  /* font-family: 'Lato', sans-serif; */
+  font-family: 'Roboto Condensed', sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans&family=Libre+Franklin&family=Montserrat:wght@100&family=Roboto&family=Roboto+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans&family=Libre+Baskerville&family=Libre+Franklin&family=Montserrat:wght@100&family=Poppins:wght@300&family=Roboto&family=Roboto+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans&family=Libre+Baskerville&family=Libre+Franklin&family=Montserrat:wght@100&family=Poppins:wght@300&family=Roboto+Condensed&family=Roboto:wght@300;400&display=swap');
+h1{
+  font-family: 'Montserrat', sans-serif;
+}
+h2{
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0;
+}
+.contactsPage, .aminiHome, .solutions, .contsctsPage{
+  max-width:100vw !important;
+  width:100vw !important;
+  padding: 1vh auto;
+  overflow:hidden;
+  overflow-x: hidden;
+  min-width: 320px;
+
+}
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
 a{
   text-decoration: none;
   color: rgb(137,50,66);
@@ -16,9 +47,11 @@ ul{
   list-style: none;
 }
 .aminiNavbar{
+  max-width: 100vw;
   height: 15vh;
-  margin:2vh;
   display:flex;
+  overflow: hidden;
+  padding: 2vh;
 }
 .hamburgerMenu{
   display:none;
@@ -43,6 +76,7 @@ ul{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 ul .navItem{
   flex:1;
@@ -63,16 +97,16 @@ ul .navItem{
 .navbarButton{
   flex:1;
   min-width: 20vw;
-  height: 40px;
+  height: 60px;
   margin: auto;
   border-radius: 6vh;
-  background-color:  rgb(137,50,66);
   font-size: 3vh;
   margin-right: 4vh;
   border:none;
+  color: #000;
+  background: #fff;
+  box-shadow: 0 2px 2px -2px #fff;
 }
-
-
 .navbarRoutes{
   flex:5;
   margin-right: 2vh;
@@ -83,16 +117,19 @@ ul .navItem{
   
 }
 .slideshowText{
-  width: 40vw;
+  width: 90vw;
   position: absolute;
-  top: 60vh;
+  top: 70vh;
   left:5vw;
   z-index:100;
+  text-align: center;
 }
+
 .slideshowHeader{
   font-weight: 600;
   margin: 0;
   border: 0;
+  text-align: center;
 }
 .sectionTwo{
   display:flex;
@@ -106,17 +143,22 @@ ul .navItem{
   height:30vh; 
 }
 .engage{
-  flex:2;
+  flex:4;
   
 }
-.sectionHeader{
-  font-size: 8vh;
-  font-weight: 600;
-  margin-left: 4vh;
+.sectionTwo .sectionHeader{
+  width:60vw;
+  font-size: 5vh;
+  text-align: center;
+  /* font-family: 'Ropa Sans', sans-serif; */
+
 }
-.sectionText{
+.sectionTwo .sectionText{
+  width:75vw;
   text-align: center;
   font-size: 3vh;
+  font-family: 'Roboto Condensed', sans-serif;
+ 
 }
 .precedeTeam{
   background-color: #0e0d0d;
@@ -126,10 +168,18 @@ ul .navItem{
 }
 .thirdSection{
   text-align: center;
+  width: 100vw;
+  height:fit-content;
 }
 .Header{
   font-weight: 600;
   font-size: 5vh;
+}
+
+.afterHeaderIntroText{
+  width:90vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* team section */
@@ -138,6 +188,11 @@ ul .navItem{
   display: flex; 
   margin: auto;
   flex-wrap: nowrap;
+}
+.moreTeamMembers{
+  display: flex;
+  justify-content: right;
+  margin-right: 3vh;
 }
 
 .aminiTeam{
@@ -169,23 +224,31 @@ ul .navItem{
 
 .fourthSection{
   text-align:center;
-  background-color: #0e0d0d;
+  /* background-color: #0e0d0d; */
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
 }
-.partnerIcons{
+.enclosePartnerIcons{
   display: flex;
   justify-content: center;
+}
+.partnerIcons{
+  width:40vw;
+  display: flex;
   
 }
 .encloseImage{
   flex: 1;
   margin: 1vh;
+
 }
 .encloseImage img{
-  max-width:20%;
+  max-width:50%;
   height:auto;
   margin: 2vh;
   border-radius: 3vh;
-  background: #000;
+  
   padding: 2vh;
 }
 
@@ -193,37 +256,17 @@ ul .navItem{
   margin:2vh;
 }
 .newsSection{
+  max-width:100vw;
   background-color: #0e0d0d;
+  height:50vh;
   text-align: center;
-  padding:2vh;
 
 }
-.newsSegment{
-  display: flex;
-  width:100vw;
+.newsPacks{
+  width:88vw;
+  overflow: hidden;
+  margin-right: auto;
   margin-left: auto;
-  margin-right:auto;
-}
-
-.newstab1, .newstab2, .newstab3, .newstab4{
-  width: 40vh;
-  height: 40vh;
-  margin:3vh;
-  border-radius: 2vh;
-}
-.newstab3{
-  display: flex;
-  flex-direction: column;
-}
-.newstab_1{
-  flex:1;
-  width:40vh;
-  height: 18vh;
-  margin: 1vh;
-  border-radius: 2vh;
-}
-.newstab1 img{
-  width:2%;
 }
 
 /**countdown **/
@@ -246,7 +289,13 @@ ul .navItem{
 }
 
 .show-counter {
-  padding: 0.5rem;
+  background-color: #fff;
+  width:60vw;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  border-radius: 0.25rem;
 }
 .shareCountdown{
   margin-left: 8vw;
@@ -258,9 +307,6 @@ ul .navItem{
 }
 
 .show-counter .countdown-link {
-  width:80vw;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -269,14 +315,21 @@ ul .navItem{
   font-size: 1.25rem;
   line-height: 1.75rem;
   padding: 0.5rem;
-  background-color: #fff;
-  border-radius: 0.25rem;
   text-decoration: none;
-  color: #000;
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
-  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-
+  color: #000; 
 }
+.show-counter h2{
+  font-weight: 2000;
+  font-family: 'Noticia Text', serif;
+  color:#853131;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 30px;
+  margin: 0;
+  padding: 0;
+}
+
 .counterbox{
   display:block;
 }
@@ -284,12 +337,15 @@ ul .navItem{
   display: flex;
   justify-content: center;
 }
-.show-counter .countdown-link img{
-  width: 20vh;
-  height:20vh;
-  transform: rotate(45deg);
-  translate: 0px -15px;
+.timerItem{
+  margin:1vh;
+  padding: 2vh;
+  border: 1px solid black;
 }
+.timerType{
+  color: #554141;
+}
+
 
 .show-counter .theCounter .countdown {
   line-height: 1.25rem;
@@ -297,6 +353,8 @@ ul .navItem{
   align-items: center;
   display: flex;
   flex-direction: column;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4vh;
 }
 
 .show-counter .theCounter .countdown.danger {
@@ -312,6 +370,7 @@ ul .navItem{
   font-size: 0.75rem;
   line-height: 1rem;
 }
+
 
 .jkk{
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
@@ -393,9 +452,12 @@ ul .navItem{
 }
 .footerInitials{
   display: flex;
+  flex-wrap: nowrap;
 }
 .footerInitials p{
+  flex: 1;
   margin:0;  
+  white-space: nowrap;
 }
 .cpyright{
   border-radius: 50%;
@@ -455,6 +517,41 @@ ul .navItem{
 
 /** media queries **/
 @media only screen and (max-width: 600px){
+  .App, .contactMethods{
+    max-width: 100vw;
+    width:100vw;
+    overflow: hidden;
+    font-size: 2vh;
+  }
+ 
+  .contactsPage .contactsHeader{
+    position: absolute;
+    margin-top: -60vh;
+    width: 100vw;
+    font-size: 8vh;
+    
+  }
+  .contactsPage .contactMethods{
+    max-width: 100vw;
+    width:90vw;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    display: block;
+    position: static;
+    margin-top: 0;
+
+  }
+  .contactsPage .contactMethods .contactMeans{
+    border:none;
+    background-color: #0e0d0d;
+    border-radius: 3vh;
+    width: 70vw;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    
+  }
   .aminiNavbar{
     width: 90vw;
     margin:auto;
@@ -471,6 +568,7 @@ ul .navItem{
   }
   .hamburgerMenu{
     display: flex;
+    align-items: center;
   }
   .shareCountdown{
     display: none;
@@ -504,14 +602,28 @@ ul .navItem{
     width: 90%;
   }
   .footerEnclosing{
-    display: block;
+    width: 60vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .a,.b,.c,.d{
+    flex:1;
+    font-size: 2.5vh;
     
+  }
+  .footerEnclosing li{
+    font-size: 2vh;
+    text-align: center;
   }
   .newsletterForm{
     width: fit-content;
     height: fit-content;
     padding:4vh;
     margin-left:6vh;
+    position: relative;
   }
   .footerLeft{
     display: block;
@@ -731,10 +843,7 @@ ul .navItem{
       display: flex;
      justify-content: left;
     }
-  
-
-
-  
+    
   
 }
 @media only screen and (max-width: 320px){
@@ -749,10 +858,9 @@ ul .navItem{
     padding: 1vh;
   }
   .aminiNavbar .hamburgerMenu{
-    display: block;
-    margin-top: 5vh;
-    font-size: 5vh;
-    margin-right: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .shareCountdown{
     display:none;
@@ -800,11 +908,21 @@ ul .navItem{
     font-weight: 300;
   }
   .slideshowText{
-    width: 30vw;
+    width: 80vw;
     position: absolute;
-    top: 90vh;
+    top: 50vh;
     left:5vw;
     z-index:100;
+    font-size: 1rem;
+    
+  }
+  .slideshowText .slideshowExtraText{
+    width:80vw;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; 
+    white-space: pre-wrap;
   }
   .sectionTwo{
     max-width: 100%;
@@ -814,40 +932,73 @@ ul .navItem{
   }
   .engage .sectionHeader{
     font-weight: 200;
+    text-align: center;
+    width:80vw;
   }
+  
   .sectionText{
     font-size: 1rem;
     padding: 2vh;
     max-width: 85vw;
+    text-align: center;
   }
+  .newsSection{
+    width:100vw;
+    height: fit-content;
+  
+  }
+  .newsPacks .newsSegment{
+    width:90vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  .newsSegment .newsIndividualSegment{
+    flex: 1;
+    background: transparent;
+    border-radius: 0vh;
+  }
+  .newsSegment .newsIndividualSegment img{
+    width: 100%;
+
+}
+.newsIndividualSegment p{
+  margin-top: -10vh;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; 
+  white-space: pre-wrap;
+  
+}
+.thirdSection{
+  padding-top:3vh;
+}
   .thirdSection .Header{
-    font-size: 1.75rem;
+    margin: 0;
+    padding: 0;
+    
   }
-  .thirdSection p{
-    max-width: 90vw;
+  .thirdSection .afterHeaderIntroText{
+    max-width: 80vw;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   .thirdSection .memberImageContainer{
-    width: 30vw;
+    width: 94vw;
   }
   .aminiTeam img{
-    width: 60%;
-    height:auto;
+    width: 70%;
     border-radius: .5vh;
   }
-  .encloseImage img{
-    max-width:60%;
-    height:auto;
-    margin: 2vh;
-    border-radius: 3vh;
-    background: #000;
-    padding: 2vh;
-  }
+
   .footerEnclosing{
     display: block;
     
   }
   .newsletterForm{
-    width: fit-content;
+    min-width: fit-content;
     height: auto;
     padding: 4vh;
   }
@@ -895,21 +1046,27 @@ ul .navItem{
     margin-bottom: 1vh;
   }
   .ch{
-    margin-top: -53vh;
-    text-overflow: ellipsis !important;
+    margin-top: -3vh;
     width: 90vw;
-    height: 25vh;
-    overflow: hidden;
+    height: 40vh;
     margin-left: 3vh;
   }
 
   .ch h1{
-    margin: 0;
+    margin: 0 auto;
     padding:0;
     text-align: center;
+    
   }
   .ch p{
+    width: 90vw;
     text-align: center;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8; 
+    white-space: pre-wrap;
+    
   }
   .aboutteam p{
     width: 90vw;
@@ -932,11 +1089,21 @@ ul .navItem{
     max-width: 100vw;
   }
   .contactsHeader{
-    margin-top: 20vh;
+    display: none;
   }
   .contactMethods{
     display: flex;
     flex-direction: column;
+  }
+  .contactsPage Button{
+    min-width: 10vh;
+  }
+  .smallscreenHeader{
+    position: absolute;
+    margin-top: -12vh;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    width: 80vw;
   }
   .formInfo{
     width:90vw;
@@ -969,6 +1136,41 @@ ul .navItem{
   .solutionSection .solutionImage{
     display:none;
   }
+  .footerEnclosing{
+    width:80vw;
+    display: flex;
+    margin-left: 4vw;
+  }
+  .footerEnclosing a{
+    flex:1;
+  }
+  .solutions .headerText{
+    position: static;
+    width:80vw;
+  }
+  .solutions h1{
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  .fourthSection h2{
+    margin: 0;
+    padding: 0;
+  }
+  .fourthSection .partnerIcons{
+    width:80vw;
+    display: flex;
+    justify-content: center;
+  }
+  .fourthSection .partnerIcons .encloseImage{
+    flex:1;
+  }
+  .fourthSection .partnerIcons .encloseImage img{
+    background: transparent;
+    width:60%;
+  }
+  
+
+  
+
 
    
 }
