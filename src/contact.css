@@ -3,23 +3,17 @@
     text-align: center;
     
 }
-img{
-    width:100vw;
-    height:auto;
-}
-.contactsHeader{
-    position: absolute;
-    margin-top: -80vh;
-    width: 100vw;
-    font-size: 10vh;
+.contactMain{
+    display: flex;
+    flex-direction: column;
     
 }
-
 .contactMethods{
-    position: absolute;
+    flex:1;
     display:flex;
-    margin-top: -50vh;
-    width: 100vw;
+    padding: 4vh;
+    margin-top: 10vh;
+    
       
 }
 .contactMeansTitle{
@@ -37,6 +31,10 @@ img{
 .deservesborder{
     margin-right: 2vh;
     border-right: 1px solid #fff;
+}
+.userInput{
+    background-color: #0e0d0d;
+    flex:3;
 }
 .inquiryForm{
     width:90vw;

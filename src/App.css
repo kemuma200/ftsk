@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Lato:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@500;600&family=Noticia+Text:wght@700&family=Open+Sans&family=Orbitron:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Lato:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@500;600&family=Noticia+Text:wght@700&family=Open+Sans&family=Orbitron:wght@600&family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Lato:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@500;600&family=Noticia+Text:wght@700&family=Open+Sans&family=Orbitron:wght@600&family=Roboto+Condensed:wght@300&family=Ropa+Sans&display=swap');
+
 .App {
   background: #000;
   color: white;
@@ -26,15 +25,6 @@ h2{
   overflow-x: hidden;
   min-width: 320px;
 
-}
-.example::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.example {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
 }
 
 
@@ -118,46 +108,46 @@ ul .navItem{
 }
 .slideshowText{
   width: 90vw;
-  position: absolute;
-  top: 70vh;
-  left:5vw;
-  z-index:100;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1vh;
 }
 
 .slideshowHeader{
+  position: absolute;
+  top: 50vh;
+  left:5vw;
+  z-index:100;
   font-weight: 600;
   margin: 0;
   border: 0;
   text-align: center;
+  font-size: 3rem;
+}
+.slideshowExtraTextEnclose{
+  padding:2vh;
+}
+.slideshowExtraText{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 .sectionTwo{
-  display:flex;
-  width:100vw;
-  margin-top: 0;
-  height:40vh;
+  width: 100vw;
+  background-color: #0e0d0d;
 }
-.sectionTwo img{
-  flex:1;
-  width: 10vh;
-  height:30vh; 
-}
-.engage{
-  flex:4;
-  
-}
-.sectionTwo .sectionHeader{
-  width:60vw;
-  font-size: 5vh;
-  text-align: center;
-  /* font-family: 'Ropa Sans', sans-serif; */
 
-}
 .sectionTwo .sectionText{
-  width:75vw;
+  width:80vw;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  font-size: 3vh;
+  font-size: 1.5rem;
   font-family: 'Roboto Condensed', sans-serif;
+  margin-bottom: 0;
+  padding:3vh;
+
  
 }
 .precedeTeam{
@@ -170,6 +160,7 @@ ul .navItem{
   text-align: center;
   width: 100vw;
   height:fit-content;
+  
 }
 .Header{
   font-weight: 600;
@@ -180,6 +171,7 @@ ul .navItem{
   width:90vw;
   margin-left: auto;
   margin-right: auto;
+  font-size: 1.5rem;
 }
 
 /* team section */
@@ -227,7 +219,6 @@ ul .navItem{
   /* background-color: #0e0d0d; */
   background-color: #fff;
   color: #000;
-  border: 1px solid #000;
 }
 .enclosePartnerIcons{
   display: flex;
@@ -383,7 +374,8 @@ ul .navItem{
   border-radius: 1vh;
   margin:2vh auto;
   padding: 1vh;
-  box-shadow: 1px 2px 2px 1px #fff;;
+  box-shadow: 1px 2px 2px 1px #fff;
+  min-width: fit-content;
 }
 .formInterior{
   margin: auto;

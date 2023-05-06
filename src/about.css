@@ -37,11 +37,58 @@
     height:auto;
   }
   .ch{
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+  .ch h1{
     position: absolute;
     top: 40vh;
     z-index:300;
-    font-size: 3vh; 
+    font-size: 3rem; 
+    margin-left: 30vw;
   }
+  .ch p{
+    font-size: 1.5rem;
+  }
+  .missionVision{
+    width:90vw;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    padding:3vh;
+   
+  }
+  .missionVision div{
+    flex:1;
+    font-size: 1.2rem;
+  }
+  .mission{
+    border-right: 1px solid #fff;
+  }
+  .values{
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+  .values h3{
+    margin: 0;
+    padding:0;
+  }
+  .values ul{
+    width:20vh;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+  }
+  .values ul li{
+    list-style-type: lower-roman
+  }
+ 
   .aboutteam{
     background-color: #0e0d0d;
   }

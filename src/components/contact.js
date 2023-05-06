@@ -19,11 +19,8 @@ export default class Contact extends React.Component{
         return(
             <div className="contactsPage"> 
            
-    <Navbar/>
-            <img className="spacebinoculars" src={image1} alt="spacebinoculars"/>
-            <h1 className="contactsHeader"> Get in touch</h1>
-            <h1 className="smallscreenHeader">Get in touch</h1>
-            <div className>
+            <Navbar/>
+            <div className="contactMain">
                 <div className="contactMethods">
                     <div className="contactMeans deservesborder summer">
                         <p className="contactMeansTitle">Email</p>

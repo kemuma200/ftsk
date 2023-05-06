@@ -18,15 +18,32 @@ export default class About extends React.Component{
                 
                 <div className="ch">
                 <h1>Who are we?</h1>
-                <p>Amini is the game-changer you have been waiting
-                for. We are a deep tech startup that's 
-                transforming Africa's climate data landscape! 
-                Harnessing the power of satellites, blockchain, AI/ML, 
-                and APIs to access vital climate insights for 
-                businesses, governments, and global organizations is
-                our area of expertise. To space and beyond!! 
-               </p>
+              
                </div>
+               <div className="encloseMissionVision">
+               <div className="missionVision">
+               <div className="mission">
+               <h3>Mission</h3>
+               <p>To bridge Africa's data gap and enable the resilience of 1 billion people by 2030.  </p>
+               </div>
+               <div>
+               <h3>Vision</h3>
+               <p>A world where people can utilize data to produce global change.</p>
+               </div>
+          </div>
+          <div className="values">
+              <ul>
+                 <h3>Values</h3>
+                 <li>Integrity</li>
+                 <li>Innovation</li>
+                 <li>Creativity</li>
+                 <li>Professionalism</li>
+                 <li>Customer focus</li>
+              </ul>
+          </div>
+               </div>
+               
+               
                
                <div className="aboutteam">
                  <h2>Our Team</h2>

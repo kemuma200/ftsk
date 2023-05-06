@@ -7,16 +7,24 @@
     height:auto;
 }
 .headerText{
-    position: absolute;
-    margin-top: -40vh;
-    margin-left: 3vh;
+    width:90vw;
+    margin-left: auto;
+    margin-right: auto;
 }
-.solutions .headerText{
-    font-size: x-large;
+.headerText h1{
+   position: absolute;
+   margin-top: -40vh;
+   margin-left: 30vw;
+   font-size: 3rem;
 }
-.solutionSection .subheader{
-    font-size: xx-large;
-    font-weight: 400;
+.headerText p{
+    font-size: 1.5rem;
+    padding:2vh;
+}
+.solutionList{
+    width:80vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 .solutionSection .solutionImage{
     width: 50vw;
@@ -38,11 +46,13 @@
     margin-top: auto;
     margin-bottom: auto;
     padding:2vh;
+    font-size: 1.2rem;
 }
 .solutionData h2{
     font-weight: 400;
+    
 }
 .solutionStatement{
-   font-size: 3vh;
+   font-size: 1.5rem;
     padding: 3vh;
 }

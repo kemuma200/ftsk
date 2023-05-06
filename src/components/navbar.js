@@ -31,15 +31,17 @@ export default class Navbar extends React.Component{
                         <li 
                         >HOME</li>
                         </NavLink>
-                        <NavLink to="/solutions" activeStyle className="navItem nohamburger">
-                        <li>SOLUTIONS</li>
-                        </NavLink>
                         <NavLink to="/about" activeStyle className="navItem nohamburger">
                         <li>ABOUT</li>
                         </NavLink>
                         <NavLink to="/contacts" activeStyle className="navItem nohamburger">
                         <li>CONTACT</li>
                         </NavLink>
+                        <NavLink to="/solutions" activeStyle className="navItem nohamburger">
+                        <li>SOLUTIONS</li>
+                        </NavLink>
+                        
+                       
                        
                        
                 </ul>

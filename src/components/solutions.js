@@ -11,9 +11,6 @@ import Navbar from "./navbar";
 import Final from "./final";
 import Footer from "./footer";
 
-
-import CountDownTimer from "./countTimer";
-
 export default class Solutions extends React.Component{
     render(){
         return(
@@ -30,7 +27,8 @@ export default class Solutions extends React.Component{
             
             </div>
             <div className="solutionSection">
-            <h2 className="subheader">Our data is</h2>
+            <div className="solutionList">
+            
                 <div className="solutionOne">
                     <div className="solutionImage">
                     <img src={c} alt="solution1"/>
@@ -57,6 +55,7 @@ export default class Solutions extends React.Component{
                         <h2>Superpowered</h2>
                         <p>Many satellites that are currently deployed focus on collecting data in the global North. We are designing a constellation of IOT integrated Nano-Satellites localized for Africa.</p>
                     </div>
+                </div>
                 </div>
                 <p className="solutionStatement">At Amini, passionate technologists are committed to bridging the data gap in Africa.
                 Our groundbreaking solution involves launching a constellation of IOT-integrated nanosatellites, providing real-time and low-cost actionable data, and building the environmental data infrastructure for Africa.

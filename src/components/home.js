@@ -25,22 +25,16 @@ export default class Home extends React.Component{
                 <div className="slideshowText">
                     <h1 className="slideshowHeader">Amini: Pioneering environmental progress through technology
                     </h1>
+                    <div className="slideshowExtraTextEnclose">
                     <p className="slideshowExtraText">Welcome to Amini, the game-changing deep tech startup that's transforming Africa's climate data landscape! Harness the power of satellites, blockchain, AI/ML, and APIs to access vital climate insights for businesses, governments, and global organizations.
                     We're a team of passionate professionals driven by a shared vision of creating a thriving ecosystem of human progress in space.
                     </p>
                     <button>Learn more</button>
-                    
-                </div>
-                <div className="sectionTwo">
-                    <img src={seat} alt="Seat"/>
-                    <div className="engage">
-                        <h2 className="sectionHeader">Grab a Seat</h2>
-                        <p className="sectionText">Let’s chat about how you can use reliable 
-                        trustworthy data to build a more resilient future 
-                        for businesses, people and our planet.</p>
                     </div>
+                   
                     
                 </div>
+               
                 <div class="newsSection">
                     <h2 className="Header">News</h2>
                     <div className="newsPacks">
@@ -58,6 +52,11 @@ export default class Home extends React.Component{
                     and leading African startups.</p>
                     <Person className="homeTeam"/>
                     <a href="/" className="moreTeamMembers">See more...</a>
+                </div>
+                <div className="sectionTwo">
+                    <p className="sectionText">Let’s chat about how you can use reliable 
+                    trustworthy data to build a more resilient future 
+                    for businesses, people and our planet.</p>
                 </div>
                 <div className="fourthSection">
                     <h2 className="Header">Our Partners</h2>
